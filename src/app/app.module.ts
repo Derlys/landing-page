@@ -7,13 +7,13 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { StoriesComponent } from './stories/stories.component';
 const routes:Routes = [
   {
     path: "", component: HomeComponent,
 },
 {
-  path: "about", component: AboutComponent,
+  path: "stories", component: StoriesComponent,
 }
 ]
 
@@ -23,7 +23,7 @@ const routes:Routes = [
     SidebarComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    StoriesComponent
   ],
   imports: [
     BrowserModule,
