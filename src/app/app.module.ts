@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { StoriesComponent } from './stories/stories.component';
 const routes:Routes = [
   {
-    path: "", component: HomeComponent,
+    path: "home", component: HomeComponent,
 },
 {
   path: "stories", component: StoriesComponent,
