@@ -1,4 +1,36 @@
-<app-header></app-header>
-<div class="container-fluid">
-  <router-outlet></router-outlet>
+<div class="d-flex flex-column justify-content-between h-100">
+  <div>
+    <app-header></app-header>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="align-items-end">
+    <footer class="tamaño text-center py-0.5">
+      <div>
+        <input type="text" value="correo electronico" class="diseño" />
+        <button class="separar">
+          suscribete
+        </button>
+      </div>
+      <div class="py-0.5">
+        <a href="https://www.facebook.com/profile.php?id=100009535093821"
+          ><img type="image/x-icon" src="/assets/facebook.svg" class="separar"
+        /></a>
+        <a href="https://www.instagram.com/derlysdm/?hl=es-la"
+          ><img type="image/x-icon" src="/assets/instagram.svg" class="separar"
+        /></a>
+        <a href="https://twitter.com/derlys_paola"
+          ><img type="image/x-icon" src="/assets/twitter.svg" class="separar"
+        /></a>
+      </div>
+      <div class="py-0.5">
+        <p class="card-text">
+          @2020.derlys Colombia.Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </div>
 </div>
+
+<div class="container"></div>
