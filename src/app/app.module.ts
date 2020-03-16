@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { TravelsComponent } from './travels/travels.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -50,7 +51,8 @@ const routes: Routes = [
     StoriesComponent,
     AboutComponent,
     TutorialsComponent,
-    TravelsComponent
+    TravelsComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
