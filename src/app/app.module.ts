@@ -50,8 +50,7 @@ const routes: Routes = [
     StoriesComponent,
     AboutComponent,
     TutorialsComponent,
-    TravelsComponent,
-   
+    TravelsComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
