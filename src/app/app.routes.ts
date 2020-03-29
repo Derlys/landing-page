@@ -2,8 +2,6 @@ import { Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
-import { StoriesComponent } from './pages/stories/stories.component';
-import { TravelsComponent } from './pages/travels/travels.component';
 import { TutorialsComponent } from './pages/tutorials/tutorials.component';
 
 export const routes: Routes = [
@@ -11,10 +9,6 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
-  },
-  {
-    path: 'stories',
-    component: StoriesComponent
   },
 
   {
@@ -26,11 +20,12 @@ export const routes: Routes = [
     component: TutorialsComponent
   },
   {
-    path: 'travels',
-    component: TravelsComponent
-  },
-  {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'blog',
+    loadChildren: () =>
+      import('./pages/blog/blog.module').then(m => m.BlogModule)
   }
 ];
